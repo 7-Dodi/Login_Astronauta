@@ -1,0 +1,260 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+@media (min-width: 300px) and (max-width: 850px){
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../imagem/backUniver.png);
+    }
+    .imagem{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        animation-name: astroLua;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: all 0.4s;
+    }
+    .imagem img{
+        width: 220px;
+    }
+    @keyframes astroLua {
+        10%{
+            top: 87%;
+        }
+        20%{
+            top: 90%;
+        }
+        30%{
+            top: 87%;
+        }
+        40%{
+            top: 90%;
+        }
+        50%{
+            top: 87%;
+        }
+        60%{
+            top: 90%;
+        }
+        70%{
+            top: 87%;
+        }
+        80%{
+            top: 90%;
+        }
+        90%{
+            top: 87%;
+        }
+    }
+    .foguete{
+        position: absolute;
+        top: 20px;
+        left: 5px;
+        transform: rotate(-30deg);
+        animation-name: fogueterun;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+    .foguete img{
+        width: 200px;
+    }
+    @keyframes fogueterun {
+        50%{
+            top: -150px;
+            left: 100px;
+        }
+    }
+    .planeta{
+        position: absolute;
+        top: 70px;
+        right: 3px;
+        float: right;
+        animation-name: planetaRun;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: all 0.5s;
+    }
+    .planeta img{
+        width: 200px;
+    }
+    @keyframes planetaRun {
+        10%{
+            top: 60px;
+        }
+        20%{
+            top: 70px;
+        }
+        30%{
+            top: 60px;
+        }
+        40%{
+            top: 70px;
+        }
+        50%{
+            top: 60px;
+        }
+        60%{
+            top: 70px;
+        }
+        70%{
+            top: 60px;
+        }
+        80%{
+            top: 70px;
+        }
+        90%{
+            top: 60px;
+        }
+        
+    }
+    .planeta2{
+        position: absolute;
+        top: 43%;
+        left: -23px;
+        animation-name: planetFlut;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: all 0.5s;
+    }
+    .planeta2 img{
+        width: 150px;
+    }
+    @keyframes planetFlut {
+        10%{
+            top: 38%;
+        }
+        20%{
+            top: 43%;
+        }
+        30%{
+            top: 38%;
+        }
+        40%{
+            top: 43%;
+        }
+        50%{
+            top: 38%;
+        }
+        60%{
+            top: 43%;
+        }
+        70%{
+            top: 38%;
+        }
+        80%{
+            top: 43%;
+        }
+        90%{
+            top: 38%;
+        }
+    }
+    .pedra{
+        position: absolute;
+        top: 40%;
+        right: 30%;
+        animation-name: pedra;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: all 0.4s;
+    }
+    .pedra img{
+        width: 100px;
+    }
+    .pedra2{
+        position: absolute;
+        top: 10%;
+        left: 20px;
+        animation-name: pedra;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: all 0.4s;
+    }
+    .pedra2 img{
+        width: 120px;
+    }
+    .pedra3{
+        position: absolute;
+        top: 85%;
+        left: 10px;
+        animation-name: pedra;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: all 0.4s;
+    }
+    .pedra3 img{
+        width: 100px;
+    }
+    .pedra4{
+        position: absolute;
+        top: 70%;
+        right: 10px;
+        animation-name: pedra;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: all 0.4s;
+    }
+    .pedra4 img{
+        width: 90px;
+    }
+    @keyframes pedra {
+        80%{
+            transform: rotate(180deg);
+        }
+    }
+    .form{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        border: 2px solid #fff;
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 320px;
+        z-index: 1;
+    }
+    .input{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .input input{
+        margin-bottom: 15px;
+        width: 84%;
+        margin-left: 8%;
+        padding: 5px;
+        border: 1px solid #222;
+        border-radius: 8px;
+        color: #38ef7d;
+        font-size: 12px;
+    }
+    .input h1{
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    .input button{
+        background-color: #11998e;
+        color: #fff;
+        margin-left: 30%;
+        width: 40%;
+        padding: 5px;
+    }
+    .fim{
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+        color: #38ef7d;
+    }
+}
